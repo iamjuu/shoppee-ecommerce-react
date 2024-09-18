@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import TopProducts from "../components/TopProducts/TopProducts";
 import Banner from "../components/Banner/Banner";
 import Subscribe from "../components/Subscribe/Subscribe";
-import Popup from "../components/Popup/Popup"; 
+import Catagory from "../components/Category/Catagory";
 
 const Home = () => {
   const [orderPopup, setOrderPopup] = useState(false);
@@ -32,7 +32,7 @@ const Home = () => {
         <Banner />
         <Subscribe />
         <Products />
-        <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} /> {/* Added from main branch */}
+        <Catagory/>
       </div>
     </>
   );
