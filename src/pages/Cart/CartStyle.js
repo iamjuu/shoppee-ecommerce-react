@@ -1,7 +1,12 @@
 import styled from "styled-components";
-
 export const ShoppingCartContainer = styled.div`
   margin-top: -45px;
+  padding: 20px;
+
+  @media (max-width: 768px) {
+    margin-top: 0;
+    padding: 10px;
+  }
 `;
 
 export const ColumnLabels = styled.div`
@@ -9,6 +14,10 @@ export const ColumnLabels = styled.div`
   border-bottom: 1px solid #eee;
   padding-bottom: 15px;
   margin-bottom: 15px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Label = styled.label`
@@ -31,6 +40,11 @@ export const Label = styled.label`
   &:nth-child(6) {
     width: 12%;
     text-align: right;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 10px;
   }
 `;
 
@@ -89,6 +103,25 @@ export const Product = styled.div`
     width: 12%;
     text-align: right;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    .product-image,
+    .product-details,
+    .product-price,
+    .product-quantity,
+    .product-removal,
+    .product-line-price {
+      width: 100%;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+
+    .product-image img {
+      width: 80px;
+    }
+  }
 `;
 
 export const Totals = styled.div`
@@ -101,9 +134,16 @@ export const Totals = styled.div`
   .totals-item-total {
     font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
   }
+
+  @media (max-width: 768px) {
+    .totals-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
 `;
 
- export const CheckoutButton = styled.button`
+export const CheckoutButton = styled.button`
   background-color: #6b6;
   color: white;
   font-size: 25px;
@@ -114,5 +154,10 @@ export const Totals = styled.div`
   cursor: pointer;
   &:hover {
     background-color: #494;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    padding: 10px 15px;
   }
 `;

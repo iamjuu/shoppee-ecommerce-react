@@ -54,6 +54,7 @@ const Header = ({ handleOrderPopup, handleWishPopup }) => {
             </div>
 
             {/* Order Button */}
+            <Link to="/cart">
             <button
               onClick={() => handleOrderPopup()}
               className="bg-gradient-to-r from-primary to-secondary text-white py-1 px-4 rounded-full flex items-center gap-3 group"
@@ -61,6 +62,7 @@ const Header = ({ handleOrderPopup, handleWishPopup }) => {
               <span className="group-hover:block hidden">Order</span>
               <FaShoppingCart className="text-xl text-white drop-shadow-sm" />
             </button>
+            </Link>
 
             {/* Wishlist Button */}
             <Link to="/wishlist">

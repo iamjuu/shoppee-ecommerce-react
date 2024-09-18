@@ -44,7 +44,7 @@ const Men = () => {
       {Card.map((item, index) => (
         <div
           key={item.id}
-          className="w-80 m-5 items-center bg-gray-800  flex flex-col  shadow-lg rounded-lg overflow-hidden relative"
+          className="w-80  hover:-translate-y-5 duration-700 m-5 items-center bg-gray-800  flex flex-col  shadow-lg rounded-lg overflow-hidden relative"
         >
           <img
             src={item.src}
