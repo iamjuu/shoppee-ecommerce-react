@@ -10,7 +10,7 @@ import { Container } from './DetailsStyle';
 const DetailsPage = () => {
   return (
     <Container>
-      <div className="container mx-auto text-white p-4">
+      <div className="container mx-auto  dark:bg-gray-900 text-white p-4">
         <div className="flex flex-wrap">
           <div className="w-full md:w-5/12 p-2">
             <div className="relative">
@@ -22,23 +22,23 @@ const DetailsPage = () => {
               <div className="absolute inset-x-0 bottom-3 flex gap-2">
               <img
   className="w-1/4 hover:-translate-y-10 transition-transform duration-1000 cursor-pointer"
-  src={Image2}
+  src={Image4}
   alt="Preview 1"
 />
 
                 <img
                   className="w-1/4  hover:-translate-y-10 transition-transform duration-1000 cursor-pointer"
-                  src={Image3}
+                  src={Image5}
                   alt="Preview 2"
                 />
                 <img
                   className="w-1/4  hover:-translate-y-10 transition-transform duration-1000 cursor-pointer"
-                  src={Image4}
+                  src={Image3}
                   alt="Preview 3"
                 />
                 <img
                   className="w-1/4  hover:-translate-y-10 transition-transform duration-1000 cursor-pointer"
-                  src={Image5}
+                  src={Image2}
                   alt="Preview 4"
                 />
               </div>
@@ -63,14 +63,7 @@ const DetailsPage = () => {
                 <button className="btn shadow bg-gray-800 text-white py-2 px-4 rounded">
                   Add to cart
                 </button>
-                <input
-                  type="number"
-                  className="border bg-gray-800 text-white rounded px-2 py-1"
-                  id="cart_quantity"
-                  min="1"
-                  max="5"
-                  name="cart_quantity"
-                />
+              
               </div>
               <div className="my-4">
                 <p className="font-bold mb-1">

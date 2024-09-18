@@ -7,6 +7,7 @@ import TopProducts from "../components/TopProducts/TopProducts";
 import Banner from "../components/Banner/Banner";
 import Subscribe from "../components/Subscribe/Subscribe";
 import Catagory from "../components/Category/Catagory";
+import Men from "../components/MenSection/Men";
 
 const Home = () => {
   const [orderPopup, setOrderPopup] = useState(false);
@@ -33,6 +34,7 @@ const Home = () => {
         <Subscribe />
         <Products />
         <Catagory/>
+        <Men/>
       </div>
     </>
   );
