@@ -15,28 +15,29 @@ const DetailsPage = () => {
           <div className="w-full md:w-5/12 p-2">
             <div className="relative">
               <img
-                className="w-full h-auto max-w-[400px] mx-auto object-cover shadow-lg"
+                className="w-full h-auto  max-w-[400px] mx-auto object-cover shadow-lg"
                 src={Image1}
                 alt="Product"
               />
               <div className="absolute inset-x-0 bottom-3 flex gap-2">
+              <img
+  className="w-1/4 hover:-translate-y-10 transition-transform duration-1000 cursor-pointer"
+  src={Image2}
+  alt="Preview 1"
+/>
+
                 <img
-                  className="w-1/4 cursor-pointer"
-                  src={Image2}
-                  alt="Preview 1"
-                />
-                <img
-                  className="w-1/4 cursor-pointer"
+                  className="w-1/4  hover:-translate-y-10 transition-transform duration-1000 cursor-pointer"
                   src={Image3}
                   alt="Preview 2"
                 />
                 <img
-                  className="w-1/4 cursor-pointer"
+                  className="w-1/4  hover:-translate-y-10 transition-transform duration-1000 cursor-pointer"
                   src={Image4}
                   alt="Preview 3"
                 />
                 <img
-                  className="w-1/4 cursor-pointer"
+                  className="w-1/4  hover:-translate-y-10 transition-transform duration-1000 cursor-pointer"
                   src={Image5}
                   alt="Preview 4"
                 />
@@ -50,9 +51,9 @@ const DetailsPage = () => {
               <div className="text-xl font-bold my-3">Black dress for Women</div>
               <div className="my-4">
                 <p className="mb-1 text-gray-500 line-through">
-                  $100 <span className="text-red-500">(20% off)</span>
+                  1000 <span className="text-red-500">(20% off)</span>
                 </p>
-                <p className="text-xl font-bold mb-1">$80</p>
+                <p className="text-xl font-bold mb-1">800</p>
                 <p className="text-gray-500">(Additional tax may apply on checkout)</p>
               </div>
               <div className="flex gap-2 my-5 items-center">
