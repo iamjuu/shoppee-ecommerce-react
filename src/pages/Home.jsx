@@ -18,7 +18,7 @@ const Home = () => {
       offset: 100,
       duration: 800,
       easing: "ease-in-sine",
-      delay: 100,
+      delay: 200,
     });
     AOS.refresh();
   }, []);
@@ -26,7 +26,6 @@ const Home = () => {
   return (
     <>
       <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
-        <Products />
         <TopProducts handleOrderPopup={handleOrderPopup} />
         <Banner />
         <Subscribe />

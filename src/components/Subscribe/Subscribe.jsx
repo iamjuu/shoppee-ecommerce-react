@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "../../assets/website/orange-pattern.jpg";
+import Banner from "../../assets/website/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-vector.jpg";
 
 const BannerImg = {
   backgroundImage: `url(${Banner})`,

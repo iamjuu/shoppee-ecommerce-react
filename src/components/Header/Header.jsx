@@ -72,9 +72,9 @@ const Header = ({ handleOrderPopup, handleWishPopup }) => {
             </button>
 
             {/* Darkmode Switch */}
-            <div>
+            {/* <div>
               <DarkMode />
-            </div>
+            </div> */}
 
             {/* Hamburger Menu for Mobile */}
             <div className="sm:hidden">
@@ -86,15 +86,7 @@ const Header = ({ handleOrderPopup, handleWishPopup }) => {
                 )}
               </button>
             </div>
-            <div className="sm:hidden">
-              <button onClick={wishtoggle}>
-                {wishOpen ? (
-                  <FaTimes className="text-2xl" />
-                ) : (
-                  <FaBars className="text-2xl" />
-                )}
-              </button>
-            </div>
+       
           </div>
         </div>
       </div>
