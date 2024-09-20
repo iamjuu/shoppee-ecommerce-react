@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
-import Products from "../components/Products/Products";
+import Caroseal from "../../../components/Caroseal/Caroseal"; // For default export
+import Products from "../../../components/Products/Products";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import TopProducts from "../components/TopProducts/TopProducts";
-import Banner from "../components/Banner/Banner";
-import Subscribe from "../components/Subscribe/Subscribe";
-import Popup from "../components/Popup/Popup"; // Imported from main branch
+import TopProducts from "../../../components/TopProducts/TopProducts";
+import Banner from "../../../components/Banner/Banner";
+import Subscribe from "../../../components/Subscribe/Subscribe";
+import Catagory from "../../../components/Category/Catagory";
+import NewcollectionMen from "../../../components/MenSection/NewcollectionMen";
 
 const Home = () => {
   const [orderPopup, setOrderPopup] = useState(false);
@@ -18,7 +20,7 @@ const Home = () => {
       offset: 100,
       duration: 800,
       easing: "ease-in-sine",
-      delay: 100,
+      delay: 200,
     });
     AOS.refresh();
   }, []);
@@ -26,12 +28,13 @@ const Home = () => {
   return (
     <>
       <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
-        <Products />
+        <Caroseal/>
         <TopProducts handleOrderPopup={handleOrderPopup} />
         <Banner />
         <Subscribe />
         <Products />
-        <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} /> {/* Added from main branch */}
+        <Catagory/>
+        <NewcollectionMen/>
       </div>
     </>
   );

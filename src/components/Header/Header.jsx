@@ -1,16 +1,16 @@
 import { IoMdSearch } from "react-icons/io";
-import { FaShoppingCart, FaHeart,FaBars, FaTimes } from "react-icons/fa";
+import { FaShoppingCart, FaHeart, FaBars, FaTimes } from "react-icons/fa";
 import { FaCaretDown } from "react-icons/fa";
 import { useState } from "react";
-import DarkMode from "./Darkmode";
+import { Link } from "react-router-dom";  // Correct import
 
 const Menu = [
   { id: 1, name: "Home", link: "/#" },
-  { id: 2, name: "Serives", link: "/services" },
+  { id: 2, name: "Services", link: "/services" },  // Fixed typo in "Services"
   { id: 3, name: "About", link: "/about" },
   { id: 4, name: "Kids Wear", link: "/KidsWear" },
-  { id: 4, name: "Mens Wear", link: "/MensWear" },
-  { id: 5, name: "Womens Wear", link: "/WomensWear" },
+  { id: 5, name: "Mens Wear", link: "/MensWear" },  // Changed id to be unique
+  { id: 6, name: "Womens Wear", link: "/WomensWear" },  // Changed id to be unique
 ];
 
 const DropdownLinks = [
@@ -30,6 +30,7 @@ const Header = ({ handleOrderPopup, handleWishPopup }) => {
   const wishtoggle = () => {
     setWishOpen(!wishOpen);
   };
+
   return (
     <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
       {/* Upper Navbar */}
@@ -53,42 +54,37 @@ const Header = ({ handleOrderPopup, handleWishPopup }) => {
             </div>
 
             {/* Order Button */}
+            <Link to="/cart">
             <button
               onClick={() => handleOrderPopup()}
               className="bg-gradient-to-r from-primary to-secondary text-white py-1 px-4 rounded-full flex items-center gap-3 group"
             >
-              <span className="group-hover:block hidden">Order</span>
+  <span className="transition-all duration-1000 ease-in-out opacity-0 max-w-0 group-hover:opacity-100 group-hover:max-w-xs overflow-hidden">
+  Order
+
+              </span>
               <FaShoppingCart className="text-xl text-white drop-shadow-sm" />
             </button>
+            </Link>
 
-            {/* wishlist Button  */}
+            {/* Wishlist Button */}
+            <Link to="/wishlist">
             <button
-              onClick={() => handleWishPopup()}
-              className="bg-gradient-to-r from-primary to-secondary text-white py-1 px-4 rounded-full flex items-center gap-3 group"
-            >
-              <FaHeart className="text-xl text-white drop-shadow-sm" />
+  onClick={() => handleWishPopup()}
+  className="bg-gradient-to-r from-primary to-secondary text-white py-1 px-4 rounded-full flex items-center gap-3 group transition-all duration-300 ease-in-out transform hover:scale-105"
+>
+  <FaHeart className="text-xl text-white drop-shadow-sm transition-transform duration-300 group-hover:scale-125" />
+  <span className="transition-all duration-1000 ease-in-out opacity-0 max-w-0 group-hover:opacity-100 group-hover:max-w-xs overflow-hidden">
+    Wishlist
+  </span>
+</button>
 
-              <span className="group-hover:block hidden">Wishlist</span>
-            </button>
-
-            {/* Darkmode Switch */}
-            <div>
-              <DarkMode />
-            </div>
+            </Link>
 
             {/* Hamburger Menu for Mobile */}
             <div className="sm:hidden">
               <button onClick={toggleMenu}>
                 {menuOpen ? (
-                  <FaTimes className="text-2xl" />
-                ) : (
-                  <FaBars className="text-2xl" />
-                )}
-              </button>
-            </div>
-            <div className="sm:hidden">
-              <button onClick={wishtoggle}>
-                {wishOpen ? (
                   <FaTimes className="text-2xl" />
                 ) : (
                   <FaBars className="text-2xl" />

@@ -82,6 +82,10 @@ const Products = () => {
                   <p className="text-sm text-gray-600">{data.color}</p>
                   <div className="flex items-center gap-1">
                     <FaStar className="text-yellow-400" />
+                    <FaStar className="text-yellow-400" />
+                    <FaStar className="text-yellow-400" />
+                    <FaStar className="text-yellow-400" />
+
                     <span>{data.rating}</span>
                   </div>
                 </div>

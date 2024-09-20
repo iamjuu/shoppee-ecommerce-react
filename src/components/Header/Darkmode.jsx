@@ -1,9 +1,9 @@
-import React from "react";
+import React,{useState} from "react";
 import LightButton from "../../assets/website/light-mode-button.png";
 import DarkButton from "../../assets/website/dark-mode-button.png";
 
 const DarkMode = () => {
-  const [theme, setTheme] = React.useState(
+  const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
 
