@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import Caroseal from "../components/Caroseal/Caroseal"; // For default export
-import Products from "../components/Products/Products";
+import Caroseal from "../../../components/Caroseal/Caroseal"; // For default export
+import Products from "../../../components/Products/Products";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import TopProducts from "../components/TopProducts/TopProducts";
-import Banner from "../components/Banner/Banner";
-import Subscribe from "../components/Subscribe/Subscribe";
-import Catagory from "../components/Category/Catagory";
-import Men from "../components/MenSection/Men";
+import TopProducts from "../../../components/TopProducts/TopProducts";
+import Banner from "../../../components/Banner/Banner";
+import Subscribe from "../../../components/Subscribe/Subscribe";
+import Catagory from "../../../components/Category/Catagory";
+import NewcollectionMen from "../../../components/MenSection/NewcollectionMen";
 
 const Home = () => {
   const [orderPopup, setOrderPopup] = useState(false);
@@ -34,7 +34,7 @@ const Home = () => {
         <Subscribe />
         <Products />
         <Catagory/>
-        <Men/>
+        <NewcollectionMen/>
       </div>
     </>
   );

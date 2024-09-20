@@ -1,10 +1,10 @@
 import React from 'react';
 import { FaRocketchat, FaTruck, FaFilter } from 'react-icons/fa';
-import Image1 from '../../assets/shirt/shirt.png';
-import Image2 from '../../assets/shirt/shirt2.png';
-import Image3 from '../../assets/shirt/shirt3.png';
-import Image4 from '../../assets/shirt/shirt4.png';
-import Image5 from '../../assets/shirt/shirt5.png';
+import Image1 from '../../../assets/shirt/shirt.png';
+import Image2 from '../../../assets/shirt/shirt2.png';
+import Image3 from '../../../assets/shirt/shirt3.png';
+import Image4 from '../../../assets/shirt/shirt4.png';
+import Image5 from '../../../assets/shirt/shirt5.png';
 import { Container } from './DetailsStyle';
 
 const DetailsPage = () => {

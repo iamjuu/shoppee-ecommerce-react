@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Image1 from '../../assets/shirt/shirt.png';
+import Image1 from '../../../assets/shirt/shirt.png';
 import { FaHeart as HeartOutline, FaHeart } from 'react-icons/fa'; // Import both filled and outlined icons
 
 const Wishlist = () => {

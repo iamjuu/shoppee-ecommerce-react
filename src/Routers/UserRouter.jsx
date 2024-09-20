@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "../pages/Home";
-import DetailsPage from "../pages/DetailsPage/DetailsPage";
-import Wishlist from "../pages/Wishlist/Wishlist"
-import Cart from "../pages/Cart/Cart"
-import Checkout from "../pages/Checkout/Checkout";
+import Home from "../pages/Users/Home/Home";
+import DetailsPage from "../pages/Users/DetailsPage/DetailsPage";
+import Wishlist from "../pages/Users/Wishlist/Wishlist"
+import Cart from "../pages/Users/Cart/Cart"
+import Checkout from "../pages/Users/Checkout/Checkout";
 import UserLayout from "../Layout/UserLayout"; 
 
 const UserRouter = () => {
