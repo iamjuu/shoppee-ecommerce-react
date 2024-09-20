@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Formik, Form, Field } from 'formik';
 import { AiOutlineUser } from 'react-icons/ai';
 import { HiOutlineMail } from 'react-icons/hi';
 import { GoLock } from 'react-icons/go';
 import { Link } from 'react-router-dom';
 import Bg from '../../assets/Signup/handover.png';
-import Select from 'react-select';
 
 const initialValues = {
   Name: '',
@@ -13,9 +12,7 @@ const initialValues = {
   password: '',
 };
 
-
 const SignupForm = ({ handleSubmit }) => {
-
   return (
     <div className="flex flex-col justify-center items-center bg-white p-8 rounded-md shadow-lg">
       <div className="w-28 h-28">
@@ -27,11 +24,10 @@ const SignupForm = ({ handleSubmit }) => {
         </div>
         <Formik
           initialValues={initialValues}
-          onSubmit={(values) => handleSubmit({ ...values, type: type.value })}
+          onSubmit={(values) => handleSubmit(values)} // Pass the form values to handleSubmit
         >
           {({ errors, touched }) => (
             <Form className="max-w-md mx-auto">
-
               {/* Name Field */}
               <div className="mb-4">
                 <label htmlFor="Name" className="block text-gray-700 font-bold mb-2">
