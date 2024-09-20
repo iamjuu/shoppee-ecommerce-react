@@ -13,13 +13,8 @@ const initialValues = {
   password: '',
 };
 
-const options = [
-  { value: 'User', label: 'User' },
-  { value: 'Agent', label: 'Agent' },
-];
 
 const SignupForm = ({ handleSubmit }) => {
-  const [type, setType] = useState(options[0]);
 
   return (
     <div className="flex flex-col justify-center items-center bg-white p-8 rounded-md shadow-lg">
@@ -36,18 +31,6 @@ const SignupForm = ({ handleSubmit }) => {
         >
           {({ errors, touched }) => (
             <Form className="max-w-md mx-auto">
-              {/* User Type */}
-              <div className="mb-4">
-                <label htmlFor="type" className="block text-gray-700 font-bold mb-2">
-                  Type
-                </label>
-                <Select
-                  options={options}
-                  value={type}
-                  onChange={(option) => setType(option)}
-                  name="type"
-                />
-              </div>
 
               {/* Name Field */}
               <div className="mb-4">

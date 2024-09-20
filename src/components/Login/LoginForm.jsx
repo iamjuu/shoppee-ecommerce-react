@@ -84,6 +84,12 @@ function UserLogin({ handleSubmit, error }) {
               <div className="mt-4 text-center">
                 <span>Don't have an account? </span>
                 <Link to="/signup" className="text-blue-500 hover:text-blue-700">Signup</Link>
+
+
+              </div>
+              <div className="text-center">
+                <Link to="/forgotpassword" className="text-red-400 hover:text-red-600">Forgot password</Link>
+
               </div>
             </Form>
           )}
