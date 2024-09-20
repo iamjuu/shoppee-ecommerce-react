@@ -5,11 +5,13 @@ import Wishlist from "../pages/Users/Wishlist/Wishlist"
 import Cart from "../pages/Users/Cart/Cart"
 import Checkout from "../pages/Users/Checkout/Checkout";
 import UserLayout from "../Layout/UserLayout"; 
-
+import Login from "../pages/Users/Login/LoginPage";
 const UserRouter = () => {
   return (
     <>
       <Routes>
+      <Route path="/login" element={<Login />} />
+
         <Route element={<UserLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/details" element={<DetailsPage />} />
