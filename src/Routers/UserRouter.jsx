@@ -6,11 +6,13 @@ import Cart from "../pages/Users/Cart/Cart"
 import Checkout from "../pages/Users/Checkout/Checkout";
 import UserLayout from "../Layout/UserLayout"; 
 import Login from "../pages/Users/Login/LoginPage";
+import Signup from "../pages/Users/Signup/SignupPage"
 const UserRouter = () => {
   return (
     <>
       <Routes>
       <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
 
         <Route element={<UserLayout />}>
           <Route path="/" element={<Home />} />
