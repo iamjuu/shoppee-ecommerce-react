@@ -2,15 +2,15 @@ import { IoMdSearch } from "react-icons/io";
 import { FaShoppingCart, FaHeart, FaBars, FaTimes } from "react-icons/fa";
 import { FaCaretDown } from "react-icons/fa";
 import { useState } from "react";
-import { Link } from "react-router-dom"; // Correct import
+import { Link } from "react-router-dom";  // Correct import
 
 const Menu = [
   { id: 1, name: "Home", link: "/#" },
-  { id: 2, name: "Services", link: "/services" }, // Fixed typo in "Services"
+  { id: 2, name: "Services", link: "/services" },  // Fixed typo in "Services"
   { id: 3, name: "About", link: "/about" },
   { id: 4, name: "Kids Wear", link: "/KidsWear" },
-  { id: 5, name: "Mens Wear", link: "/MensWear" }, // Changed id to be unique
-  { id: 6, name: "Womens Wear", link: "/WomensWear" }, // Changed id to be unique
+  { id: 5, name: "Mens Wear", link: "/MensWear" },  // Changed id to be unique
+  { id: 6, name: "Womens Wear", link: "/WomensWear" },  // Changed id to be unique
 ];
 
 const DropdownLinks = [
@@ -55,28 +55,30 @@ const Header = ({ handleOrderPopup, handleWishPopup }) => {
 
             {/* Order Button */}
             <Link to="/cart">
-              <button
-                onClick={() => handleOrderPopup()}
-                className="bg-gradient-to-r from-primary to-secondary text-white py-1 px-4 rounded-full flex items-center gap-3 group transition-all duration-300 ease-in-out transform hover:scale-105"
-              >
-                <span className="transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 max-h-0 group-hover:max-h-10 overflow-hidden">
-                  Order
-                </span>
-                <FaShoppingCart className="text-xl text-white drop-shadow-sm" />
-              </button>
+            <button
+              onClick={() => handleOrderPopup()}
+              className="bg-gradient-to-r from-primary to-secondary text-white py-1 px-4 rounded-full flex items-center gap-3 group"
+            >
+  <span className="transition-all duration-1000 ease-in-out opacity-0 max-w-0 group-hover:opacity-100 group-hover:max-w-xs overflow-hidden">
+  Order
+
+              </span>
+              <FaShoppingCart className="text-xl text-white drop-shadow-sm" />
+            </button>
             </Link>
 
             {/* Wishlist Button */}
             <Link to="/wishlist">
-              <button
-                onClick={() => handleWishPopup()}
-                className="bg-gradient-to-r from-primary to-secondary text-white py-1 px-4 rounded-full flex items-center gap-3 group transition-all duration-300 ease-in-out transform hover:scale-105"
-              >
-                <FaHeart className="text-xl text-white drop-shadow-sm transition-transform duration-300 group-hover:scale-125" />
-                <span className="transition-all duration-300 ease-in-out opacity-0 max-w-0 group-hover:opacity-100 group-hover:max-w-xs overflow-hidden">
-                  Wishlist
-                </span>
-              </button>
+            <button
+  onClick={() => handleWishPopup()}
+  className="bg-gradient-to-r from-primary to-secondary text-white py-1 px-4 rounded-full flex items-center gap-3 group transition-all duration-300 ease-in-out transform hover:scale-105"
+>
+  <FaHeart className="text-xl text-white drop-shadow-sm transition-transform duration-300 group-hover:scale-125" />
+  <span className="transition-all duration-1000 ease-in-out opacity-0 max-w-0 group-hover:opacity-100 group-hover:max-w-xs overflow-hidden">
+    Wishlist
+  </span>
+</button>
+
             </Link>
 
             {/* Hamburger Menu for Mobile */}
