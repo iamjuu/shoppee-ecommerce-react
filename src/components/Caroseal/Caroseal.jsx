@@ -42,7 +42,7 @@ const Carousel = () => {
           >
             <img
               src={item.src}
-              className="block mt-[250px] ml-[500px] w-[500px] h-[500px] object-cover"
+              className="block mt-[250px] ml-[500px]  sm:ml-[100px] md:[600px]   w-[500px] h-[500px] object-cover"
               alt={item.alt}
             />
             <div className="absolute bottom-10 left-10 bg-opacity-50 text-white p-2 rounded">

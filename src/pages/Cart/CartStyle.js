@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const ShoppingCartContainer = styled.div`
-  margin-top: -45px;
+  margin-top: 5px;
   padding: 20px;
 
   @media (max-width: 768px) {
