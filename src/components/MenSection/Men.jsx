@@ -28,7 +28,7 @@ const Men = () => {
     {
       id: 4,
       src: Image4,
-      p: "Full-sleeve product"
+      p: "Half-sleeve product"
     },
    
   ]);

@@ -1,5 +1,6 @@
 import {useState} from "react";
 import {CheckoutButton,ColumnLabels,Label,Product,ShoppingCartContainer,Totals} from "./CartStyle"
+import { Link } from "react-router-dom";
 const ShoppingCart = () => {
     const [cart, setCart] = useState([
       {
@@ -116,8 +117,9 @@ const ShoppingCart = () => {
             <div>${totals.total}</div>
           </div>
         </Totals>
-  
+  <Link to='/checkout'>
         <CheckoutButton>Checkout</CheckoutButton>
+  </Link>
       </ShoppingCartContainer>
     );
   };

@@ -3,6 +3,7 @@ import Home from "../pages/Home";
 import DetailsPage from "../pages/DetailsPage/DetailsPage";
 import Wishlist from "../pages/Wishlist/Wishlist"
 import Cart from "../pages/Cart/Cart"
+import Checkout from "../pages/Checkout/Checkout";
 import UserLayout from "../Layout/UserLayout"; 
 
 const UserRouter = () => {
@@ -14,6 +15,7 @@ const UserRouter = () => {
           <Route path="/details" element={<DetailsPage />} />
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout/>}/>
 
 
         </Route>
