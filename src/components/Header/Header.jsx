@@ -98,11 +98,11 @@ const Header = ({ handleOrderPopup, handleWishPopup }) => {
           {Menu.map((data) => (
             <li
               key={data.id}
-              className="relative hover:bg-yellow-100 dark:hover:bg-gray-800 rounded-md transition-all duration-200"
+              className="relative  dark:hover:bg-gray-200 rounded-md transition-all duration-200"
             >
               <Link
                 to={data.link}
-                className="inline-block px-4 py-2 w-full text-center text-gray-900 dark:text-gray-200 hover:text-yellow-500 dark:hover:text-yellow-400"
+                className="inline-block px-4 py-2 w-full text-center text-gray-200 dark:text-gray-200 hover:text-blue-500 dark:hover:text-gray-400"
               >
                 {data.name}
               </Link>
@@ -112,12 +112,12 @@ const Header = ({ handleOrderPopup, handleWishPopup }) => {
           <li className="group relative cursor-pointer">
             <Link
               to="#"
-              className="flex items-center gap-2 py-2 text-gray-900 dark:text-gray-200 hover:text-yellow-500 dark:hover:text-yellow-400"
+              className="flex items-center gap-2 py-2 text-gray-300 dark:text-gray-800 hover:text-gray-500 dark:hover:text-gray-400"
             >
               Trending Products
               <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
             </Link>
-            <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white dark:bg-gray-700 p-2 text-black dark:text-white shadow-md">
+            <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white dark:bg-blue-700 p-2 text-black dark:text-white shadow-md">
               <ul>
                 {DropdownLinks.map((data) => (
                   <li
@@ -126,7 +126,7 @@ const Header = ({ handleOrderPopup, handleWishPopup }) => {
                   >
                     <Link
                       to={data.link}
-                      className="inline-block w-full rounded-md p-2 text-center text-gray-900 dark:text-gray-200 hover:text-yellow-500 dark:hover:text-yellow-400"
+                      className="inline-block w-full rounded-md p-2 text-center text-gray-900 dark:text-gray-200 hover:text-blue-500 dark:hover:text-yellow-400"
                     >
                       {data.name}
                     </Link>

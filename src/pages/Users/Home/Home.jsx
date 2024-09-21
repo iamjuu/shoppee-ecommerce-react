@@ -10,6 +10,7 @@ import Catagory from "../../../components/Category/Catagory";
 import NewcollectionMen from "../../../components/MenSection/NewcollectionMen";
 import { HeroParallax } from "../../../components/ui/Stroller/Stroller"; 
 import { SparklesPreview } from "../../../components/Sparkle/Sparkleview";
+import {InfiniteMovingCardsDemo} from "../../../components/MovingCard/MovinCard"
 
 // images  
 import Image1 from "../../../assets/Strolling/image1.jpg"
@@ -72,7 +73,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="bg-white dark:bg-black dark:text-white duration-200">
+    <div className="bg-black dark:bg-black dark:text-white duration-200">
       {/* <Caroseal /> */}
       <SparklesPreview/>
       <HeroParallax products={products} />
@@ -83,6 +84,7 @@ const Home = () => {
       <Products />
       <Catagory />
       <NewcollectionMen />
+      <InfiniteMovingCardsDemo/>
 
       {/* < AuroraBackground/> */}
     </div>

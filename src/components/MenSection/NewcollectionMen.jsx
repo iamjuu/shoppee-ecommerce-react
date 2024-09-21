@@ -44,7 +44,7 @@ const Men = () => {
       {Card.map((item, index) => (
         <div
           key={item.id}
-          className="w-80  hover:-translate-y-5 duration-700 m-5 items-center bg-gray-600  flex flex-col  shadow-lg rounded-lg overflow-hidden relative"
+          className="w-80  hover:-translate-y-5 duration-700 m-5 items-center text-white bg-gray-900  flex flex-col  shadow-lg rounded-lg overflow-hidden relative"
         >
           <img
             src={item.src}
@@ -59,7 +59,7 @@ const Men = () => {
             <div className="flex items-center gap-28">
               <a
                 href="#"
-                className="bg-yellow-400 text-white py-2 px-4 rounded hover:bg-yellow-500 transition-colors"
+                className="bg-blue-400 text-white py-2 px-4 rounded hover:bg-blue-500 transition-colors"
               >
                 Add to cart
               </a>
