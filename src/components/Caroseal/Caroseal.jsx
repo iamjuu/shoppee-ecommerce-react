@@ -29,7 +29,7 @@ const Carousel = () => {
 
   return (
     <div
-      className="carousel w-full h-[500px] relative overflow-hidden bg-cover bg-center"
+      className="carousel w-full h-[500px] relative   ml[-300px] overflow-hidden bg-cover bg-center"
       style={{ backgroundImage: `url(${Bg})` }}
     >
       <div className="carousel-inner relative w-full h-64 flex items-center justify-center">

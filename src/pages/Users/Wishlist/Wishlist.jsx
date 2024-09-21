@@ -24,7 +24,7 @@ const Wishlist = () => {
         <div className="flex items-center gap-28">
           <a
             href="#"
-            className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors"
+            className="bg-yellow-400 text-white py-2 px-4 rounded hover:bg-yellow-500 transition-colors"
           >
             Add to cart
           </a>

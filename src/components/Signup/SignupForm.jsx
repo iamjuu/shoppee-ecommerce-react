@@ -74,6 +74,9 @@ const SignupForm = ({ handleSubmit }) => {
                 <div className="flex items-center bg-white border-2 border-gray-300 rounded-lg focus-within:border-blue-500 transition duration-300">
                   <GoLock className="text-gray-500 mx-3" />
                   <Field
+
+
+
                     type="password"
                     id="password"
                     name="password"
