@@ -5,13 +5,11 @@ import Image2 from '../../../assets/shirt/shirt2.png';
 import Image3 from '../../../assets/shirt/shirt3.png';
 import Image4 from '../../../assets/shirt/shirt4.png';
 import Image5 from '../../../assets/shirt/shirt5.png';
-// import { Container } from './DetailsStyle';
+import { Container } from './DetailsStyle';
 
 const DetailsPage = () => {
   return (
-    <>
-    
-    {/* // <Container> */}
+    <Container>
       <div className="container mx-auto  dark:bg-gray-900 text-white p-4">
         <div className="flex flex-wrap">
           <div className="w-full md:w-5/12 p-2">
@@ -91,8 +89,7 @@ const DetailsPage = () => {
           </div>
         </div>
       </div>
-    {/* </Container> */}
-    </>
+    </Container>
   );
 };
 
