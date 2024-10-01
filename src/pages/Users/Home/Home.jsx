@@ -73,7 +73,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="bg-black dark:bg-black dark:text-white duration-200">
+    <div className=" dark:bg-black dark:text-white duration-200">
       {/* <Caroseal /> */}
       <SparklesPreview/>
       <HeroParallax products={products} />

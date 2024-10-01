@@ -15,15 +15,15 @@ export const HeroParallax = ({ products }) => {
   const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
 
   const translateX = useSpring(
-    useTransform(scrollYProgress, [0, 1], [0, 1000]),
+    useTransform(scrollYProgress, [0, 1], [0, 100]),
     springConfig
   );
   const translateXReverse = useSpring(
-    useTransform(scrollYProgress, [0, 1], [0, -1000]),
+    useTransform(scrollYProgress, [0, 5], [0, -200]),
     springConfig
   );
   const rotateX = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [15, 0]),
+    useTransform(scrollYProgress, [0, 0.1], [1, 0]),
     springConfig
   );
   const opacity = useSpring(
@@ -31,11 +31,11 @@ export const HeroParallax = ({ products }) => {
     springConfig
   );
   const rotateZ = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [20, 0]),
+    useTransform(scrollYProgress, [0, 0.2], [10, 0]),
     springConfig
   );
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
+    useTransform(scrollYProgress, [0, 0.2], [-700, 100]),
     springConfig
   );
 
@@ -88,7 +88,7 @@ export const HeroParallax = ({ products }) => {
 // Header component
 export const Header = () => {
   return (
-    <div className="max-w-7xl relative mx-auto  md:py-40 px-4 w-full left-0 top-0">
+    <div className="max-w-7xl relative mx-auto   md:py-40 px-4 w-full left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
         Shopee <br /> Fasion
       </h1>
